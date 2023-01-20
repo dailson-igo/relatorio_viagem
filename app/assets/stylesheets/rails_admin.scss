@@ -1,0 +1,28 @@
+$fa-font-path: ".";
+// app/assets/stylesheets/rails_admin.scss
+// Gostei mais dos temas: cerulean, litera, materia, zephyr, yeti e sketchy
+// Use no terminal "yarn build:css" após alterar o tema
+
+@import "bootswatch/dist/cerulean/variables";
+@import "rails_admin/src/rails_admin/styles/base.scss";
+@import "bootswatch/dist/cerulean/bootswatch";
+
+//@import "bootswatch/dist/litera/variables";
+//@import "rails_admin/src/rails_admin/styles/base.scss";
+//@import "bootswatch/dist/litera/bootswatch";
+
+//@import "bootswatch/dist/materia/variables";
+//@import "rails_admin/src/rails_admin/styles/base.scss";
+//@import "bootswatch/dist/materia/bootswatch";
+
+//@import "bootswatch/dist/zephyr/variables";
+//@import "rails_admin/src/rails_admin/styles/base.scss";
+//@import "bootswatch/dist/zephyr/bootswatch";
+
+//@import "bootswatch/dist/yeti/variables";
+//@import "rails_admin/src/rails_admin/styles/base.scss";
+//@import "bootswatch/dist/yeti/bootswatch";
+
+//@import "bootswatch/dist/sketchy/variables";
+//@import "rails_admin/src/rails_admin/styles/base.scss";
+//@import "bootswatch/dist/sketchy/bootswatch";
