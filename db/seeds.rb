@@ -23,8 +23,11 @@ end
 # elapsed = ending - starting
 
 # Inserindo Usuários
-Usuario.create!(email: 'admin@admin.com', password: 'admin123')
-Usuario.create!(email: 'dailson.araujo@tce.ap.gov.br', password: 'dailson123')
+if Usuario.count == 0
+  Usuario.create!(email: 'admin@admin.com', password: 'admin123')
+  Usuario.create!(email: 'dailson.araujo@tce.ap.gov.br', password: 'dailson123')
+end
+
 
 # Inserindo Lotações
 # lotacoes = [

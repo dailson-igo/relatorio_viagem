@@ -1,24 +1,26 @@
-# README
+# LEIA-ME
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+##  Versão das Principais Gems
+- `ruby` version: 3.1
+- `rails` version: 7.0.4
+- `rails_admin` version: 3.1.1
 
-* Ruby version
+# Configurações
 
-* System dependencies
+Baixe o repositório rails_admin_base do ramo principal (branch main)
+```
+$ git clone -b main git@github.com:dailson-igo/rails_admin_base
+```
 
-* Configuration
+Após baixar, entre no diretório
+```
+$ cd rails_admin_base
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+E execute os comando a seguir dentro da raiz do diretório do projeto
+```
+$ bundle install && yarn add sass && yarn build:css && rails db:create && rails db:migrate && rails db:seed
+```
