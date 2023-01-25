@@ -20,7 +20,15 @@ Após baixar, entre no diretório
 $ cd rails_admin_base
 ```
 
-E execute os comando a seguir dentro da raiz do diretório do projeto
+E execute os comandos a seguir dentro da raiz do diretório do projeto
 ```
 $ bundle install && yarn add sass && yarn build:css && rails db:create && rails db:migrate && rails db:seed
+```
+
+Crie seu modelo, reinicie o serviço que o Rails Admin incluirá automaticamente no menu principal do site
+```
+$ rails generate model Lotacao \
+descricao:string \
+sigla:string{20} \
+ativa:boolean
 ```
