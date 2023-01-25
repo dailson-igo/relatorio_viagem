@@ -24,9 +24,9 @@ RailsAdmin.config do |config|
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar = true
 
-  config.main_app_name = ["Diretoria da Área de Controle Externo - DAEXT", ""]
-  config.excluded_models = %w[ActiveStorage::Blob ActiveStorage::Attachment ActiveStorage::VariantRecord]
-  config.label_methods = %i[descricao nome]
+  config.main_app_name          = ['Diretoria da Área de Controle Externo - DAEXT', '']
+  config.excluded_models        = %w[ActiveStorage::Blob ActiveStorage::Attachment ActiveStorage::VariantRecord]
+  config.label_methods          = %i[descricao nome]
   config.default_items_per_page = 50
 
   config.actions do
