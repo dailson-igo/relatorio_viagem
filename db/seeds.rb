@@ -30,27 +30,32 @@ end
 
 
 # Inserindo Lotações
-# lotacoes = [
-#   { descricao: 'Diretoria da Área de Controle Externo', sigla: 'DAEXT', ativa: true },
-#   { descricao: '1ª Inspetoria de Controle Externo', sigla: '1ª ICE', ativa: true },
-#   { descricao: '2ª Inspetoria de Controle Externo', sigla: '2ª ICE', ativa: true },
-#   { descricao: '3ª Inspetoria de Controle Externo', sigla: '3ª ICE', ativa: true },
-#   { descricao: '4ª Inspetoria de Controle Externo', sigla: '4ª ICE', ativa: true },
-#   { descricao: '5ª Inspetoria de Controle Externo', sigla: '5ª ICE', ativa: true },
-#   { descricao: '6ª Inspetoria de Controle Externo', sigla: '6ª ICE', ativa: true },
-#   { descricao: '7ª Inspetoria de Controle Externo', sigla: '7ª ICE', ativa: true },
-#   { descricao: '8ª Inspetoria de Controle Externo', sigla: '8ª ICE', ativa: false }
-# ]
-#
-# lotacoes.each do |record|
-#   if Lotacao.where(descricao: record[:descricao]).present? == false
-#     Lotacao.create!(record)
-#     log_time('Lotação')
-#   end
-# end
-#
-# # Inserindo Servidores
-# 1_000.times do |i|
-#   Servidor.create!(nome: "Servidor#{i} Sobrenome#{i}", matricula: "#{i}", lotacao_id: rand(1..9))
-#   log_time('Servidor')
-# end
+lotacoes = [
+  { descricao: 'Diretoria da Área de Controle Externo', sigla: 'DAEXT', ativa: true },
+  { descricao: '1ª Inspetoria de Controle Externo', sigla: '1ª ICE', ativa: true },
+  { descricao: '2ª Inspetoria de Controle Externo', sigla: '2ª ICE', ativa: true },
+  { descricao: '3ª Inspetoria de Controle Externo', sigla: '3ª ICE', ativa: true },
+  { descricao: '4ª Inspetoria de Controle Externo', sigla: '4ª ICE', ativa: true },
+  { descricao: '5ª Inspetoria de Controle Externo', sigla: '5ª ICE', ativa: true },
+  { descricao: '6ª Inspetoria de Controle Externo', sigla: '6ª ICE', ativa: true },
+  { descricao: '7ª Inspetoria de Controle Externo', sigla: '7ª ICE', ativa: true },
+  { descricao: '8ª Inspetoria de Controle Externo', sigla: '8ª ICE', ativa: false }
+]
+
+lotacoes.each do |record|
+  if Lotacao.where(descricao: record[:descricao]).present? == false
+    Lotacao.create!(record)
+    log_time('Lotação')
+  end
+end
+
+# Inserindo Servidores
+1_000.times do |i|
+  Servidor.create!(nome: "Servidor#{i} Sobrenome#{i}", matricula: "#{i}", lotacao_id: rand(1..9))
+  log_time('Servidor')
+end
+
+(1000..1100).each do |i|
+  Servidor.create!(nome: "Servidor#{i} Sobrenome#{i}", matricula: "#{i}", lotacao_id: rand(1..9))
+  log_time('Servidor')
+end
