@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descricao: MyString
+  data_inicio: 2023-01-25
+  data_fim: 2023-01-25
+  cidade: MyString
+  link_evento: MyString
+  protocolo_despesa: MyString
+  data_protocolo: 2023-01-25
+  link_protocolo: MyString
+  ementa: MyText
+
+two:
+  descricao: MyString
+  data_inicio: 2023-01-25
+  data_fim: 2023-01-25
+  cidade: MyString
+  link_evento: MyString
+  protocolo_despesa: MyString
+  data_protocolo: 2023-01-25
+  link_protocolo: MyString
+  ementa: MyText
