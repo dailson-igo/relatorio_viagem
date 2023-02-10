@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_01_25_165136) do
+ActiveRecord::Schema[7.0].define(version: 2023_02_08_005748) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -56,9 +59,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_165136) do
   create_table "lotacoes", force: :cascade do |t|
     t.string "descricao", null: false
     t.string "sigla", limit: 20
-    t.boolean "ativa"
+    t.boolean "ativa", default: true, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "chefe_id"
+    t.bigint "lotacao_vinculante_id"
+    t.index ["chefe_id"], name: "index_lotacoes_on_chefe_id"
+    t.index ["lotacao_vinculante_id"], name: "index_lotacoes_on_lotacao_vinculante_id"
   end
 
   create_table "modelo_relatorio_viagens", force: :cascade do |t|
@@ -71,7 +78,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_165136) do
     t.string "nome"
     t.integer "matricula"
     t.string "cargo_funcao"
-    t.integer "lotacao_id", null: false
+    t.bigint "lotacao_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["lotacao_id"], name: "index_servidores_on_lotacao_id"
@@ -91,5 +98,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_25_165136) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "lotacoes", "lotacoes", column: "lotacao_vinculante_id"
+  add_foreign_key "lotacoes", "servidores", column: "chefe_id"
   add_foreign_key "servidores", "lotacoes"
 end

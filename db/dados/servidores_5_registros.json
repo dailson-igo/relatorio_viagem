@@ -1,0 +1,76 @@
+{
+  "total": 45764,
+  "titulo": "Listagem de Servidores Ativos",
+  "detalhe":
+  {
+    "total__sum": "193.498.826,10"
+  },
+  "rows":
+  [
+    {
+      "horas_extras": "0",
+      "codigo_orgao": "PO",
+      "nome": "AARAO JOSE DA SILVA",
+      "ano": 2022,
+      "cpf": "###.845.4##-##",
+      "funcionario_id": 1,
+      "mes": 12,
+      "descricao_orgao": "PERICIA OFICIAL DO ESTADO DE ALAGOAS",
+      "total": "9.412,71",
+      "id": 2022120097076,
+      "numero_ordem": 97076
+    },
+    {
+      "horas_extras": "0",
+      "codigo_orgao": "PM",
+      "nome": "ABD NEGO OLIVEIRA DA SILVA",
+      "ano": 2022,
+      "cpf": "###.028.1##-##",
+      "funcionario_id": 2,
+      "mes": 12,
+      "descricao_orgao": "POLICIA MILITAR DE ALAGOAS",
+      "total": "5.668,83",
+      "id": 2022120140191,
+      "numero_ordem": 140191
+    },
+    {
+      "horas_extras": "0",
+      "codigo_orgao": "PM",
+      "nome": "ABDA KEILLA ANGELO TAVARES",
+      "ano": 2022,
+      "cpf": "###.712.4##-##",
+      "funcionario_id": 427227,
+      "mes": 12,
+      "descricao_orgao": "POLICIA MILITAR DE ALAGOAS",
+      "total": "4.250,37",
+      "id": 2022120186421,
+      "numero_ordem": 186421
+    },
+    {
+      "horas_extras": "0",
+      "codigo_orgao": "PM",
+      "nome": "ABDENEGO PINHEIRO DA SILVA",
+      "ano": 2022,
+      "cpf": "###.368.1##-##",
+      "funcionario_id": 381535,
+      "mes": 12,
+      "descricao_orgao": "POLICIA MILITAR DE ALAGOAS",
+      "total": "4.647,16",
+      "id": 2022120167797,
+      "numero_ordem": 167797
+    },
+    {
+      "horas_extras": "0",
+      "codigo_orgao": "SESAU",
+      "nome": "ABDENIO SANTOS RUFINO",
+      "ano": 2022,
+      "cpf": "###.742.5##-##",
+      "funcionario_id": 3,
+      "mes": 12,
+      "descricao_orgao": "SECRETARIA DE ESTADO DA SAUDE",
+      "total": "1.429,98",
+      "id": 2022120033288,
+      "numero_ordem": 33288
+    }
+  ]
+}
